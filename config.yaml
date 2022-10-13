@@ -1,0 +1,16 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  f_p10k.zsh:
+    src: p10k.zsh
+    dst: ~/.p10k.zsh
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+profiles:
+  Asante:
+    dotfiles:
+    - f_p10k.zsh
+    - f_zshrc
