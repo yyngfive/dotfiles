@@ -117,7 +117,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+source ~/everforest-dark.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias rm='trash-put'
@@ -138,6 +140,7 @@ eval $(thefuck --alias)
 export PATH=~/samtools/bin:$PATH
 export PATH=~/bwa:$PATH
 export PATH=~/bowtie2:$PATH
+export PATH=~/.local/bin:$PATH
 
-source ~/everforest-dark.zsh
 alias dotdrop=~/dotfiles/dotdrop.sh --cfg=~/dotfiles/config.yaml
+
