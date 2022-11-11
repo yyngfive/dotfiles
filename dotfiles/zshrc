@@ -140,7 +140,16 @@ eval $(thefuck --alias)
 export PATH=~/samtools/bin:$PATH
 export PATH=~/bwa:$PATH
 export PATH=~/bowtie2:$PATH
+export PATH=~/gatk:$PATH
 export PATH=~/.local/bin:$PATH
+export PATH=~/kallisto:$PATH
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+
+alias picard='java -jar ~/picard/build/libs/picard.jar '
+
+alias vim='nvim'
+alias cht='cht.sh'
 
 alias dotdrop=~/dotfiles/dotdrop.sh --cfg=~/dotfiles/config.yaml
-
+. "$HOME/.cargo/env"
